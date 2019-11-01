@@ -36,3 +36,9 @@ numbers:
         addi $t0, $t0, 1
         addi $s1, $s1, 1
         j charactertype
+lowercase:
+       blt $t1, 97, specialc
+       bgt $t1, 118, specialc
+       sub $t1, $t1, 87
+       add $s7, $s7, $t1
+       addi $t0, $t0, 1
