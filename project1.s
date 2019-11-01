@@ -42,3 +42,8 @@ lowercase:
        sub $t1, $t1, 87
        add $s7, $s7, $t1
        addi $t0, $t0, 1
+       addi $s1, $s1, 1
+       j charactertype
+uppercase:
+       blt $t1, 65, specialc
+       bgt $t1, 86, specialc
