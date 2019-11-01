@@ -52,3 +52,9 @@ uppercase:
        addi $t0, $t0, 1
        addi $s1, $s1, 1
        j charactertype
+specialc:
+       sub $s3, $t1, $t1
+       add $s7, $s7, $s3
+       addi $t0, $t0, 1
+       addi $s1, $s1, 1
+       j charactertype
